@@ -108,13 +108,15 @@ inline
 std::string base64routines::Encode(const std::string& data) {
   std::string result;
 
+  int data_size = data.size();
+
   int encoded_size = calculateEncodedSize(data.size());
   result.resize(encoded_size);
 
   int triple_start = 0;
   int quad_start = 0;
-  while (triple_start < data.size()) {
-    int triple_length = data.size() - triple_start;
+  while (triple_start < data_size) {
+    int triple_length = data_size - triple_start;
     if (triple_length > 3)
       triple_length = 3;
 
@@ -139,6 +141,8 @@ inline
 std::string base64routines::Decode(const std::string& data) {
   std::string result;
 
+  int data_size = data.size();
+
   if (data.size() % 4 != 0)
     return result;
 
@@ -147,7 +151,7 @@ std::string base64routines::Decode(const std::string& data) {
 
   int quad_start = 0;
   int triple_start = 0;
-  while (quad_start < data.size()) {
+  while (quad_start < data_size) {
     char quad[4] = {0, 0, 0, 0};
     for (int i = 0; i < 4; ++i) {
       if (data[quad_start + i] != kPadChar)
