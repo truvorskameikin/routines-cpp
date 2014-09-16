@@ -7,11 +7,11 @@ The idea is: you can get any header file with the name *[feature]_routines.h* an
 ## Base64 ##
 Header-only implementation of [Base64](https://en.wikipedia.org/wiki/Base64) Encode/Decode algorithms. The implementation is not intended to be super fast, it just works.
 
-__Repository location__:
+__Repository location:__
 
     base64/base64_routines.h
 
-__Usage__:
+__Usage:__
     
     #include <assert.h>
     #include "base64_routines.h"
