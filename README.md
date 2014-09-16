@@ -2,7 +2,7 @@
 
 The collection of header-only routines.
 
-The idea is: you can get any header file with the name *[feature]_routines.h* and use it in your project without any compiler or linker setup. The repository also have tests for all features.
+The idea is: you can get any header file with the name *[feature]_routines.h* and use it in your project without any compiler or linker setup. This repository also includes unit tests for all features.
 
 ## Base64 ##
 Header-only implementation of Base64 Encode/Decode algorithms. The implementation is not intended to be super fast, it just works.
