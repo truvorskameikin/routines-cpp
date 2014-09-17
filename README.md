@@ -9,12 +9,12 @@ Header-only implementation of [Base64](https://en.wikipedia.org/wiki/Base64) Enc
 
 __Repository location:__
 
-    base64/base64_routines.h
+    routines-cpp/base64/base64_routines.h
 
 __Usage:__
     
     #include <assert.h>
-    #include "base64_routines.h"
+    #include "routines-cpp/base64/base64_routines.h"
     std::string test_string = "1234567";
     std::string encoded = base64routines::Encode(test_string);
     std::string decoded = base64routines::Decode(encoded);
