@@ -23,5 +23,6 @@ __Usage:__
 
 ## Coming soon ##
 
+*  Big integer routines
 *  Unicode routines (Unicode UTF-8 sequense parser, code position categories etc.)
 *  String routines (split, strip, substitute etc.)
