@@ -23,6 +23,8 @@ __Usage:__
 
 ## Coming soon ##
 
+*  Some secure hash algorithms such as md5, sha1, sha256
+*  Endianness routines
 *  Big integer routines
 *  Unicode routines (Unicode UTF-8 sequense parser, code position categories etc.)
 *  String routines (split, strip, substitute etc.)
